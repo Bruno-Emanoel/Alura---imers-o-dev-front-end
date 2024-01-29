@@ -1,0 +1,110 @@
+@media screen and (max-width: 900px) {
+    .no-playlist{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .sidebar{
+        width: 100vw;
+        height: 70vh;
+        padding-bottom: 0;
+    }
+
+    .sidebar__navigation{
+        flex-direction: row;
+        align-items: center;
+        height: 15%;
+    }
+
+    .sidebar__navigation__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 80%;
+        padding: 3px 0 0 0;
+    }
+
+    .sidebar__navigation__list__item{
+        padding: 0;
+    }
+
+    .logo-spotify{
+        width: 15vw;
+    }
+
+    .standart-options{
+        margin-right: 40px;
+    }
+
+    .sidebar__library{
+        height: 40%;
+    }
+
+    .sidebar__library__playlists{
+        align-items: center;
+    }
+
+    .no-playlist{
+        align-items: center;
+        width: 50%;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    main{
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        margin: 0 12px 12vh 12px;
+    }
+
+    .downbar__text{
+        text-align: center;
+        width: 50%;
+    }
+
+    .downbar__text__p{
+        display: none;
+    }
+
+    .downbar__button{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .no-playlist{
+        width: 80%;
+    }
+
+    .sidebar__footer{
+        height: 35%;
+    }
+
+    main{
+        height: 90vh;
+        margin: 0 0 100px 0;
+    }
+
+    .main-navigation__search{
+        display: none;
+        visibility: hidden;
+    }
+
+    .main-container__about{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-container__about__list, .main-container__about__contacts{
+        margin-bottom: 20px;
+    }
+
+    .main-container__playlists__list{
+        justify-content: space-evenly;
+    }
+}

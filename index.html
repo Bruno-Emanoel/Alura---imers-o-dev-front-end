@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web player: música para todas as pessoas</title>
+    <link rel="icon" type="image/x-icon" href="src/assets/icons/favicon.png">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/sidebar-downbar.css">
+    <link rel="stylesheet" href="src/styles/main-style.css">
+    <link rel="stylesheet" href="src/styles/media-queries.css">
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+
+</head>
+<body>
+    <aside class="sidebar">
+        <nav class="sidebar__navigation flexer sidebar-element">
+            <img src="src/assets/icons/logo-spotify.png" alt="Logo Spotify" class="logo-spotify">
+            <ul class="sidebar__navigation__list">
+                <li class="sidebar__navigation__list__item">
+                    <a href="">
+                        <span class="fa fa-home"></span>
+                        <span>Início</span>
+                    </a>
+                </li>
+                <li class="sidebar__navigation__list__item">
+                    <a href="">
+                        <span class="fa fa-search"></span>
+                        <span>Buscar</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sidebar__library flexer sidebar-element">
+            <div class="inliner">
+                <h2 class="sidebar__library__title">
+                    <i class="fa fa-book"></i>
+                    Biblioteca
+                </h2>
+                <i class="fa fa-plus" style="margin-right: 10px"></i>
+            </div>
+            <ol class="sidebar__library__playlists flexer">
+                <li class="no-playlist flexer">
+                    <h3 class="no-playlist__title">Crie sua primeira playlist</h3>
+                    <p class="no-playlist__text">É fácil, vamos te ajudar.</p>
+                    <button class="no-playlist__button">Criar playlist</button>
+                </li>
+                <li class="no-playlist flexer">
+                    <h3 class="no-playlist__title">Que tal seguir um podcast novo?</h3>
+                    <p class="no-playlist__text">Avisaremos você sobre novos episódios.</p>
+                    <button class="no-playlist__button">Explore podcasts</button>
+                </li>
+            </ol>
+        </div>
+        <footer class="sidebar__footer flexer sidebar-element">
+            <div class="sidebar__footer__flex">
+                <span class="standart-options">Legal</span>
+                <span class="standart-options">Centro de Privacidade</span>
+                <span class="standart-options">Política de Privacidade</span>
+                <span class="standart-options">Cookies</span>
+                <span class="standart-options">Sobre anúncios</span>
+                <span class="standart-options">Acessibilidade</span>
+                <span class="standart-options">Notice at Collection</span>
+                <span class="standart-options">Your Privacy Choices</span>
+                <span class="standart-options">Cookies</span>
+            </div>
+            <button class="sidebar__footer__button"><i class="fa fa-globe"></i>   Português do Brasil</button>
+        </footer>
+    </aside>
+    <main>
+        <nav class="main-navigation inliner">
+            <div class="main-navigation__arrows inliner">
+                <button class="arrow"><</button>
+                <button class="arrow">></button>
+            </div>
+            <div class="main-navigation__search">
+                <i class="fa fa-search seach-icon"></i>
+                <input type="text" name="Buscar item" id="search-input" class="search-input" maxlength="600" placeholder="O que você gostaria de ouvir?">
+            </div>
+            <div class="main-navigation__buttons">
+                <button class="subscribe">Inscrever-se</button>
+                <button class="enter">Entrar</button>
+            </div>
+        </nav>
+        <div class="main-container flexer">
+            <section class="main-container__playlists">
+                <div class="inliner">
+                    <h2>Playlists do Spotify</h2>
+                    <span>Mostrar tudo</span>
+                </div>
+
+                <ul class="main-container__playlists__list inliner" id="playlist-list">
+                    <li class="playlist flexer">
+                        <img src="./src/assets/playlist/4.jpeg" alt="" style="width: 120px; height: 120px; object-fit: cover;">
+                        <h3>Pod Delas</h3>
+                        <p class="playlist-text">Sejam muito bem vindos e bem vindas ao PodDelas, espaço de conversa comandado por Boo Unzueta e Tata Estaniecki!
+                            Aqui você vai encontrar muita conversa gostosa, sempre com leveza, humor e boas histórias!</p>
+                    </li>
+                    <li class="playlist flexer">
+                        <img src="./src/assets/playlist/1.jpeg" alt="" style="width: 120px; height: 120px; object-fit: cover;">
+                        <h3>Christmas Hits</h3>
+                        <p class="playlist-text">The biggest Christmas songs of all time.</p>
+                    </li>
+                    <li class="playlist flexer">
+                        <img src="./src/assets/playlist/2.png" alt="" style="width: 120px; height: 120px; object-fit: cover;">
+                        <h3>Pop Mix</h3>
+                        <p class="playlist-text">Harry Styles, Billie Ellish, Sabrina Carpenter, e mais</p>
+                    </li>
+                    <li class="playlist flexer">
+                        <img src="./src/assets/playlist/3.jpeg" alt="" style="width: 120px; height: 120px; object-fit: cover;">
+                        <h3>New music Friday</h3>
+                        <p class="playlist-text">New music from Ice Spice, Justin Timberlake, Megan Thee Stallion, Christian Nodal and more!</p>
+                    </li>
+                    <li class="playlist flexer">
+                        <img src="./src/assets/playlist/5.jpeg" alt="" style="width: 120px; height: 120px; object-fit: cover;">
+                        <h3>Beast Mode</h3>
+                        <p class="playlist-text">Get your beast mode on!</p>
+                    </li>
+                    <li class="playlist flexer">
+                        <img src="./src/assets/playlist/4.jpeg" alt="" style="width: 120px; height: 120px; object-fit: cover;">
+                        <h3>Pod Delas</h3>
+                        <p class="playlist-text">Sejam muito bem vindos e bem vindas ao PodDelas, espaço de conversa comandado por Boo Unzueta e Tata Estaniecki!
+                            Aqui você vai encontrar muita conversa gostosa, sempre com leveza, humor e boas histórias!</p>
+                    </li>
+                    <li class="playlist flexer">
+                        <img src="./src/assets/playlist/1.jpeg" alt="" style="width: 120px; height: 120px; object-fit: cover;">
+                        <h3>Christmas Hits</h3>
+                        <p class="playlist-text">The biggest Christmas songs of all time.</p>
+                    </li>
+                    <li class="playlist flexer">
+                        <img src="./src/assets/playlist/2.png" alt="" style="width: 120px; height: 120px; object-fit: cover;">
+                        <h3>Pop Mix</h3>
+                        <p class="playlist-text">Harry Styles, Billie Ellish, Sabrina Carpenter, e mais</p>
+                    </li>
+                    <li class="playlist flexer">
+                        <img src="./src/assets/playlist/3.jpeg" alt="" style="width: 120px; height: 120px; object-fit: cover;">
+                        <h3>New music Friday</h3>
+                        <p class="playlist-text">New music from Ice Spice, Justin Timberlake, Megan Thee Stallion, Christian Nodal and more!</p>
+                    </li>
+                    <li class="playlist flexer">
+                        <img src="./src/assets/playlist/5.jpeg" alt="" style="width: 120px; height: 120px; object-fit: cover;">
+                        <h3>Beast Mode</h3>
+                        <p class="playlist-text">Get your beast mode on!</p>
+                    </li>
+                </ul>
+
+                <ul class="main-container__playlists__list inliner hidden" id="result-artist">
+                    <li class="playlist flexer">
+                        <img src="./src/assets/playlist/4.jpeg" alt="" id="artist-img" style="width: 120px; height: 120px; object-fit: cover;">
+                        <h3 id="artist-name">Foo Fighters</h3>
+                        <div class="play">
+                            <span class="fa fa-solid fa-play"></span>
+                        </div>
+                    </li>
+                </ul>
+
+            </section>
+            <section class="inliner main-container__about">
+                <ol class="main-container__about__list flexer">
+                    <li>Empresa</li>
+                    <li>Sobre</li>
+                    <li>Empregos</li>
+                    <li>For the Record</li>
+                </ol>
+                <ol class="main-container__about__list flexer">
+                    <li>Comunidades</li>
+                    <li>Para Artistas</li>
+                    <li>Desenvolvedores</li>
+                    <li>Publicidade</li>
+                    <li>Investidores</li>
+                    <li>Fornecedores</li>
+                </ol>
+                <ol class="main-container__about__list flexer">
+                    <li>Links úteis</li>
+                    <li>Suporte</li>
+                    <li>Aplicativo móvel grátis</li>
+                </ol>
+                <ol class="main-container__about__contacts inliner" st>
+                    <li><span class="social-icon fab fa-instagram"></span></li>
+                    <li><span class="social-icon fab fa-twitter"></span></li>
+                    <li><span class="social-icon fab fa-facebook"></span></li>
+                </ol>
+            </section>
+            <hr style="width: 90%;">
+            <footer class="main-container__footer">&copy;2024 Spotify AB</footer>
+        </div>
+    </main>
+    <div class="downbar inliner">
+        <div class="downbar__text flexer"> 
+            <h4>Testar o Premium de graça</h4>
+            <p class="downbar__text__p">Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncions. Não precisa de cartão de crédito.</p>
+        </div>
+        <button class="downbar__button">Inscreva-se grátis</button>
+    </div>
+    <script src="write-html.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
